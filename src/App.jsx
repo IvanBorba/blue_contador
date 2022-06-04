@@ -1,5 +1,7 @@
 import "./App.css";
 import { useState } from "react";
+import Display from "./components/Display";
+import Button from "./components/Button";
 // import React from "react";
 
 const App = () => {
@@ -16,10 +18,10 @@ const App = () => {
 
   return (
     <div>
-      <h1>{number}</h1>
+      <Display text={number} />
       <div>
-        <button onClick={removeOne}>-</button>
-        <button onClick={addOne}>+</button>
+        <Button onClick={removeOne}>-</Button>
+        <Button onClick={addOne}>+</Button>
       </div>
     </div>
   );
@@ -33,6 +35,6 @@ export default App;
 // X Limpar o código inicial;
 // X Utilizar o useState pra criar uma variavel numérica que inicie em 0;
 // X Renderizar essa variável;
-// - Criar duas funções, uma pra subtrair um e uma pra adicionar um na variavel;
-// - Criar dois botões, um para cada função;
-// - Chamar as funções no onClick dos botões;
+// X Criar duas funções, uma pra subtrair um e uma pra adicionar um na variavel;
+// X Criar dois botões, um para cada função;
+// X Chamar as funções no onClick dos botões;
